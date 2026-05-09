@@ -14,9 +14,9 @@ def initialize_gee() -> bool:
 
     # ── 1. Streamlit Cloud secrets (production) ──────────────────
     try:
-        sa_email   = st.secrets.get("GEE_SERVICE_ACCOUNT", "")
-        project_id = st.secrets.get("GEE_PROJECT_ID", "")
-        sa_key_str = st.secrets.get("GEE_KEY_JSON", "")
+        sa_email   = st.secrets.get("tarunrony610@gmail.com", "")
+        project_id = st.secrets.get("ee.tarunrony610", "")
+        sa_key_str = st.secrets.get("projects/ee-tarunrony610/assets/Sapahar_upazila", "")
         if sa_email and project_id and sa_key_str:
             creds = ee.ServiceAccountCredentials(
                 email=sa_email,
